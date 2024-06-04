@@ -28,10 +28,43 @@ namespace dev.Services
             response.EnsureSuccessStatusCode();
             string result = await response.Content.ReadAsStringAsync();
 
-            var a = JsonSerializer.Deserialize<List<Skill>>(result);
-
-            return a;
+            return JsonSerializer.Deserialize<List<Skill>>(result);
 
         }
+
+        public async Task<List<WorkExperience>> GetWorkExperience()
+        {
+            var client = new HttpClient();
+            var request = new HttpRequestMessage(HttpMethod.Get, "https://eu-west-2.aws.data.mongodb-api.com/app/application-0-wumjgid/endpoint/workexperience");
+            var response = await client.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+            string result = await response.Content.ReadAsStringAsync();
+
+            return JsonSerializer.Deserialize<List<WorkExperience>>(result);
+        }
+
+
+        public async Task<List<Education>> GetEducation()
+        {
+            var client = new HttpClient();
+            var request = new HttpRequestMessage(HttpMethod.Get, "https://eu-west-2.aws.data.mongodb-api.com/app/application-0-wumjgid/endpoint/education");
+            var response = await client.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+            string result = await response.Content.ReadAsStringAsync();
+
+            return JsonSerializer.Deserialize<List<Education>>(result);
+        }
+
+        public async Task<List<Portfolio>> GetPortfolio()
+        {
+            var client = new HttpClient();
+            var request = new HttpRequestMessage(HttpMethod.Get, "https://eu-west-2.aws.data.mongodb-api.com/app/application-0-wumjgid/endpoint/porfolio");
+            var response = await client.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+            string result = await response.Content.ReadAsStringAsync();
+
+            return JsonSerializer.Deserialize<List<Portfolio>>(result);
+        }
+
     }
 }
