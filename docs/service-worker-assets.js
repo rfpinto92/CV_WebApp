@@ -33,7 +33,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-Q8DitEQWTY19uRkAEINzHyKCwgC8pUkGsFyNIPF7iTc=",
+      "hash": "sha256-Vx6+lyWv0lzagtJ7JHfPQooFtIgMWO1w+SRdne1HtMA=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -133,7 +133,7 @@
       "url": "_framework\/netstandard.wasm"
     },
     {
-      "hash": "sha256-e9vMFLdbmPU9Wm7bs+I+n1TLYe3X\/D8rUk93HgoKI1g=",
+      "hash": "sha256-nyijQN4ToWVqzidref62LT5sNHzNZee7pVAdxuIuYjY=",
       "url": "_framework\/RPinto.wasm"
     },
     {
@@ -397,7 +397,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -409,59 +409,59 @@
       "url": "css\/flickity.css"
     },
     {
-      "hash": "sha256-iqohlDG+xn9MRt53DKygzaORvtzhTCN4xvi1LHNU3OM=",
+      "hash": "sha256-+lA9Gd+uWr9tYsFI\/XPOgzexJtFyerIiGL4a3SvKhwc=",
       "url": "css\/font-awesome\/css\/all.css"
     },
     {
-      "hash": "sha256-rx5u3IdaOCszi7Jb18XD9HSn8bNiEgAqWJbdBvIYYyU=",
+      "hash": "sha256-xJOHXqkHw34u97lWD3WtXdkYEhoPQoie2jUcyrA3PrE=",
       "url": "css\/font-awesome\/css\/all.min.css"
     },
     {
-      "hash": "sha256-aUc\/Piams91gcICl0a5il1F8ndIjkSuQZT63iycbjzY=",
+      "hash": "sha256-Rr3b9RVHMRCNGCUP5iFthCLGLjAYHSNY+RP90cVu5LI=",
       "url": "css\/font-awesome\/css\/brands.css"
     },
     {
-      "hash": "sha256-cQCM8wipuyo6Pdqpc\/gWwNOhHbXMnnvdVJgIlCMBmz4=",
+      "hash": "sha256-DzFRdVfCg0uGASG\/oorBc7uUwhGInjLSpfFhHbBjCL4=",
       "url": "css\/font-awesome\/css\/brands.min.css"
     },
     {
-      "hash": "sha256-uizNVYajHJ3x7EiqsA4UOumDzCOQy8KTsmI+YgeUccQ=",
+      "hash": "sha256-w0kH5RzZuskTXbvJhSwwgcDFS185AqGA44uqUNMvk9I=",
       "url": "css\/font-awesome\/css\/fontawesome.css"
     },
     {
-      "hash": "sha256-+NADVoWZmHhL2ibh0U8tmBUVkhuW3tUNXW9vDnW6wVw=",
+      "hash": "sha256-IVdIeuzM6F+bJa19K+w3n8tkywULHDipqNwUVAh4qVA=",
       "url": "css\/font-awesome\/css\/fontawesome.min.css"
     },
     {
-      "hash": "sha256-kKf7NRFywhkzwQlDz\/4L4R3zSzrczx8OlnazD9fNSXA=",
+      "hash": "sha256-Ki7lYxTbF5P\/3oCgD9+aouHjVA+E0j9GsixDvZA8uvw=",
       "url": "css\/font-awesome\/css\/regular.css"
     },
     {
-      "hash": "sha256-2SuaJCPFZO2lelHf4gVly9J+sdZIm\/lA4V2IohQsQFQ=",
+      "hash": "sha256-6aRRj3xwT19gNt+rH6kP5Ayq7ttcc9Co3B4x2uxDsYE=",
       "url": "css\/font-awesome\/css\/regular.min.css"
     },
     {
-      "hash": "sha256-PmhYLeyjci8McUFDdYJ4RdNbtV7CGQ1M8\/wRAI93v3A=",
+      "hash": "sha256-GScCC6cBnFFJ9oM7fYuVCYwFysKpMNupRb9ak1NLgYM=",
       "url": "css\/font-awesome\/css\/solid.css"
     },
     {
-      "hash": "sha256-GtpSWaWsYafWgxX376a5jWHS0EeN8FRYaciAr+qmfc0=",
+      "hash": "sha256-nGDPa400\/ugb1Ihw+GnuSrn6+QMKjwEiq8LC8r7dRgA=",
       "url": "css\/font-awesome\/css\/solid.min.css"
     },
     {
-      "hash": "sha256-eKvKpIhOkCbIxQ\/AfP0Q6JUc+3W9h55y0hq\/wWLCKsg=",
+      "hash": "sha256-0UX1MRTH8q8upS4F4xMHitJTJ9XTx4gGKHYpk35XRsc=",
       "url": "css\/font-awesome\/css\/svg-with-js.css"
     },
     {
-      "hash": "sha256-m83zkE1NOJOsablRGhPDUlo7tWZiE3yRYxb4nShYYD4=",
+      "hash": "sha256-dfmnZy4vU5IzLsoA4d8tix0Ei6tJVVfjniMUjgxi7eo=",
       "url": "css\/font-awesome\/css\/svg-with-js.min.css"
     },
     {
-      "hash": "sha256-tAySWCQ9E3bmFat4HKMpvHS2E3UCRInSnZJSNYaHCV0=",
+      "hash": "sha256-nRTh\/TfmEsOggnkTjxQaZGZj4LhSH+QXNdgtlekbPak=",
       "url": "css\/font-awesome\/css\/v4-shims.css"
     },
     {
-      "hash": "sha256-\/aMDUDDThDwnUdwNpl+4AiMOwApACK7tg93dx7l8vJM=",
+      "hash": "sha256-CnIrmIKGyLBZ3nTvRNLAy\/FsLEiie+SBWanO4iWx9EM=",
       "url": "css\/font-awesome\/css\/v4-shims.min.css"
     },
     {
@@ -469,7 +469,7 @@
       "url": "css\/font-awesome\/webfonts\/fa-brands-400.eot"
     },
     {
-      "hash": "sha256-4nScskp3IIq92f2jXw0U8JGUjETSH5d8gEijsT5L7Ms=",
+      "hash": "sha256-0WgXIGDHzvMXyLqh1el\/EMLqc87l7NaGIRu+RLicZ2M=",
       "url": "css\/font-awesome\/webfonts\/fa-brands-400.svg"
     },
     {
@@ -489,7 +489,7 @@
       "url": "css\/font-awesome\/webfonts\/fa-regular-400.eot"
     },
     {
-      "hash": "sha256-1Cpk3DSamAdei+Elh5Q\/K9UgZai7GJYNfcc5C1NRF+A=",
+      "hash": "sha256-Jz0l4+4cLN+2xFia+jqOIEFnjvWDJAWIZOxsNiUFa0M=",
       "url": "css\/font-awesome\/webfonts\/fa-regular-400.svg"
     },
     {
@@ -509,7 +509,7 @@
       "url": "css\/font-awesome\/webfonts\/fa-solid-900.eot"
     },
     {
-      "hash": "sha256-GkbngM5b62UH1ir4sgqSszyPBC6HxhL0u\/gzC\/w1NBk=",
+      "hash": "sha256-3fLGDDToGgOzjTyqtwXw2HxAMExDLNTtbqf8xHy2C8Q=",
       "url": "css\/font-awesome\/webfonts\/fa-solid-900.svg"
     },
     {
@@ -529,7 +529,7 @@
       "url": "css\/main.css"
     },
     {
-      "hash": "sha256-rCZwoXzvE7F8H82jvyuLI8U0zb4uJOpMYlY6KK++zbo=",
+      "hash": "sha256-1T+BQpL30uR5PvzLWKmXre\/XgNYKNhXqrrWSknTg66w=",
       "url": "css\/mdb.min.css"
     },
     {
@@ -537,7 +537,7 @@
       "url": "css\/mdb.min.css.map"
     },
     {
-      "hash": "sha256-M8\/ZR9L7yyK82J8MFyt+U5vkSFJZXGcjfX7OzRfhcjc=",
+      "hash": "sha256-3uLLvDtrTw9H8qxoQCtFfUcSQeqGNH0aqlHBVMeO1eg=",
       "url": "css\/mdb.rtl.min.css"
     },
     {
@@ -593,10 +593,6 @@
       "url": "manifest.webmanifest"
     },
     {
-      "hash": "sha256-enKgCMkYmCpfEcmg6Annbmc40VZ\/A6aYYSQjZfVn2cU=",
-      "url": "sample-data\/weather.json"
-    },
-    {
       "hash": "sha256-RGDxWWF00GzKlX\/ayixx4aN3zx1vB+5Mdf+zvz\/JegM=",
       "url": "scripts\/aos.js"
     },
@@ -609,7 +605,7 @@
       "url": "scripts\/main.js"
     },
     {
-      "hash": "sha256-lajG56sgHx0owb7ehvPrSb6l1OHeOjbZsBh9rhqJy0Q=",
+      "hash": "sha256-K7hb1m\/GC9jVajpyJ2zrVEBzOkiMz87sctML4stse1k=",
       "url": "scripts\/mdb.min.js"
     },
     {
@@ -617,5 +613,5 @@
       "url": "scripts\/mdb.min.js.map"
     }
   ],
-  "version": "fZUUeF0N"
+  "version": "VrSWh7FW"
 };

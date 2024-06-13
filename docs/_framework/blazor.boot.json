@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "RPinto",
   "resources": {
-    "hash": "sha256-oH2zMZs05G9gsIirAm16wttnIVB43xHrzs5Z+V0R7z8=",
+    "hash": "sha256-pGaCOO40nh8vHSv86OGdrTzKOMcd24NpD4lgKcyg7So=",
     "jsModuleNative": {
       "dotnet.native.8.0.0.lz15c9vggk.js": "sha256-LjLDIz9+J7uuiwMlQ4HbNx2BnSpphOtO2MwkoI28vdI="
     },
@@ -41,7 +41,7 @@
       "MongoDB.Driver.wasm": "sha256-s7+wOxneFbWyKFR3M5kbfifZJyS9c8dNPVWYBZ2G3dw=",
       "MongoDB.Libmongocrypt.wasm": "sha256-6jUnNRcI7cT+yho+HTxSHZTTWCz9PVAjKVBrehq6ouk=",
       "netstandard.wasm": "sha256-im5jeKgZXXwpvEm+EVd9gpIO0yRYJQmjMtno+E1DlOE=",
-      "RPinto.wasm": "sha256-e9vMFLdbmPU9Wm7bs+I+n1TLYe3X/D8rUk93HgoKI1g=",
+      "RPinto.wasm": "sha256-nyijQN4ToWVqzidref62LT5sNHzNZee7pVAdxuIuYjY=",
       "SharpCompress.wasm": "sha256-5T7C9zsTB8Pr6/ydLJ4ILwSeTbvSzCeyxVoEXO0Rl5Q=",
       "Snappier.wasm": "sha256-Gm94GtJQLL4cxpQaCqIJxc0dCxpC/lvYPK/tNy0pRVk=",
       "System.Collections.Concurrent.wasm": "sha256-0bFhxl6IvsGwLc70pBIroyQK6kkXQ83NCTvNNscohY8=",
