@@ -1,6 +1,6 @@
 {
-  "name": "dev",
-  "short_name": "dev",
+  "name": "RPinto",
+  "short_name": "RPinto",
   "id": "./",
   "start_url": "./",
   "display": "standalone",
@@ -14,9 +14,9 @@
       "sizes": "512x512"
     },
     {
-      "src": "icon-192.png",
+      "src": "icon-128.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "128x128"
     }
   ]
 }

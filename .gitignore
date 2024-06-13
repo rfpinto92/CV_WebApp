@@ -2,3 +2,6 @@
 dev/.vs/
 dev/bin/
 dev/obj/
+/RPinto/bin
+/RPinto/obj
+/RPinto/.vs
