@@ -1,4 +1,4 @@
-﻿namespace dev.Models
+﻿namespace RPinto.Models
 {
     public class Education
     {

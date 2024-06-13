@@ -1,8 +1,8 @@
-﻿using dev.Models;
+﻿using RPinto.Models;
 using MongoDB.Driver;
 using System.Text.Json;
 
-namespace dev.Services
+namespace RPinto.Services
 {
     public class MongoDB_Service
     {
@@ -64,6 +64,17 @@ namespace dev.Services
             string result = await response.Content.ReadAsStringAsync();
 
             return JsonSerializer.Deserialize<List<Portfolio>>(result);
+        }
+
+        public async Task<List<Reference>> GetReferences()
+        {
+            var client = new HttpClient();
+            var request = new HttpRequestMessage(HttpMethod.Get, "https://eu-west-2.aws.data.mongodb-api.com/app/application-0-wumjgid/endpoint/reference");
+            var response = await client.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+            string result = await response.Content.ReadAsStringAsync();
+
+            return JsonSerializer.Deserialize<List<Reference>>(result);
         }
 
     }

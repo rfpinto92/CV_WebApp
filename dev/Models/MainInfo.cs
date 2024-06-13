@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using MongoDB.Driver;
 
-namespace dev.Models
+namespace RPinto.Models
 {
     public class MainInfo
     {
@@ -19,5 +19,8 @@ namespace dev.Models
         public string GitUrl { get; set; }
         public string InstagramUrl { get; set; }
         public string FacebookUrl { get; set; }
+        public string Youtube { get; set; }
+        public string LinkedinName { get; set; }
+        public string CV_Url { get; set; }
     }
 }
