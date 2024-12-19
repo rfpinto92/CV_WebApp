@@ -74,7 +74,7 @@ namespace RPinto.Services
             response.EnsureSuccessStatusCode();
             string result = await response.Content.ReadAsStringAsync();
 
-            return JsonSerializer.Deserialize<List<Reference>>(result); 
+            return JsonSerializer.Deserialize<List<Reference>>(result);
         }
 
     }
