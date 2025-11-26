@@ -1,0 +1,25 @@
+﻿@using CV_WebApp.Models
+<div class="shadow-1-strong bg-white my-5 p-5" id="experience">
+    <div class="work-experience-section">
+        <h2 class="h2 fw-light mb-4">Work Experience</h2>
+        <div class="timeline">
+            @foreach (var item in WorkExperiencesList)
+            {
+                <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
+                    <div class="timeline-head px-4 pt-3">
+                        <div class="h5">@item.Title <span class="text-muted h6">at @item.CompanyName</span></div>
+                    </div>
+                    <div class="timeline-body px-4 pb-4">
+                        <div class="text-muted text-small mb-3">@item.StartDate - @item.EndDate</div>
+                        <div>@((MarkupString)item.Description)</div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<WorkExperienceModel> WorkExperiencesList { get; set; } = default!;
+}

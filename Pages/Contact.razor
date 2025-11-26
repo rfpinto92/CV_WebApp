@@ -1,0 +1,20 @@
+﻿@using CV_WebApp.Models
+<div class="shadow-1-strong bg-white my-5 p-5" id="contact">
+    <div class="contant-section">
+        <h2 class="h2 fw-light text mb-4">Contact</h2>
+
+        <div class="row mb-4">
+            <div class="mt-1">
+                <div class="h6"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i>@MainInfo.Phone</div>
+                <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i><a href="mailto:@MainInfo.Email" target="_blank">@MainInfo.Email</a></div>
+                <div class="h6"><i class="fab fa-linkedin pe-2 text-muted" style="width:24px;opacity:0.85;"></i><a href="@MainInfo.LinkedinAddress" target="_blank">@MainInfo.LinkedinName</a></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public MainInfoModel MainInfo { get; set; } = default!;
+}
