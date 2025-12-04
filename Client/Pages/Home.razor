@@ -1,0 +1,98 @@
+﻿@page "/"
+@using System.Web
+@using Shared.Models
+@inject HttpClient Http
+@inject IJSRuntime js
+
+
+
+@if (mainInfo == null && skillsList == null && leftSkillsList == null
+&& rightSkillsList == null && workExperiencesList == null &&
+educationsList == null && portfoliosList == null && referencesList == null)
+{
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
+}
+else
+{
+    <Header MainInfo="mainInfo" />
+
+    <body class="bg-light" id="top">
+
+        <div class="page-content">
+            <div class="container resume-container">
+                <Intro MainInfo="mainInfo" />
+                <AboutMe MainInfo="mainInfo" />
+                <ProfessionalSkills LeftSkillsList="leftSkillsList" RightSkillsList="rightSkillsList" />
+                <Work WorkExperiencesList="workExperiencesList" />
+                <EducationHistory EducationsList="educationsList" />
+                <Portfolio PortfoliosList="portfoliosList" ToTheLeft="toTheLeft" />
+                <References ReferencesList="referencesList" />
+                <Contact MainInfo="mainInfo" />
+            </div>
+        </div>
+        <Footer MainInfo="mainInfo"/>
+    </body>
+
+}
+
+@code
+{
+
+    private MainInfoModel? mainInfo;
+    private List<SkillModel>? skillsList;
+    private SkillModel[]? leftSkillsList;
+    private SkillModel[]? rightSkillsList;
+    private List<WorkExperienceModel>? workExperiencesList;
+    private List<EducationModel>? educationsList;
+    private List<PortfolioModel>? portfoliosList;
+    private List<ReferenceModel>? referencesList;
+
+    private decimal numberPerColumn = 0;
+
+    private bool toTheLeft = true;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var responseMainInfo  = await Http.GetFromJsonAsync<ApiResponseModel<MainInfoModel>>("/api/MainInfo");
+        mainInfo = responseMainInfo?.Result ?? new MainInfoModel();
+
+        var responseSkills = await Http.GetFromJsonAsync<ApiResponseModel<List<SkillModel>>>("/api/Skills");
+        skillsList = responseSkills?.Result ?? new List<SkillModel>();
+
+        var responseWorkExperience = await Http.GetFromJsonAsync<ApiResponseModel<List<WorkExperienceModel>>>("/api/WorkExperience");
+        workExperiencesList = responseWorkExperience?.Result ?? new List<WorkExperienceModel>();
+
+        var responseEducations = await Http.GetFromJsonAsync<ApiResponseModel<List<EducationModel>>>("/api/Education");
+        educationsList = responseEducations?.Result ?? new List<EducationModel>();
+
+        var responsePortfolio = await Http.GetFromJsonAsync<ApiResponseModel<List<PortfolioModel>>>("/api/Portfolio");
+        portfoliosList = responsePortfolio?.Result ?? new List<PortfolioModel>();
+
+        var responseReferences  = await Http.GetFromJsonAsync<ApiResponseModel<List<ReferenceModel>>>("/api/References");
+        referencesList = responseReferences?.Result ?? new List<ReferenceModel>();
+        numberPerColumn = Math.Ceiling((decimal)skillsList.Count / 2);
+        leftSkillsList = new SkillModel[(int)numberPerColumn];
+        rightSkillsList = new SkillModel[(int)numberPerColumn];
+
+        skillsList.CopyTo(0, leftSkillsList, 0, (int)numberPerColumn);
+        skillsList.CopyTo((int)numberPerColumn, rightSkillsList, 0, (int)numberPerColumn - 1);
+
+
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await js.InvokeVoidAsync("initCarousel");
+        }
+    }
+}
